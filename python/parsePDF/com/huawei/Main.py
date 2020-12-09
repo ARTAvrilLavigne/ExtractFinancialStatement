@@ -255,7 +255,7 @@ def split_pdf(start_page, end_page, originPDFPath, tmpPDFPath):
 
 # 实现解析PDF转化为excel格式文件 TODO 当前API只支持最多十页的转化。若超过数量则可以循环调用！！
 # 使用我单独封装的java API接口进行解析转化excel，因为试了多种python开源三方件解析效果极差
-# 故使用我封装的解析jar包即可，屏蔽掉本部分java代码解析具体操作对使用者sophia不可见
+# 故使用我封装的解析jar包即可，屏蔽掉本部分java代码解析具体操作对使用者不可见
 def parse_pdf(jarPath, parsePDFPath, saveExcelPath):
     command = "java -jar " + jarPath
     arg0 = parsePDFPath
@@ -279,20 +279,20 @@ if __name__ == '__main__':
     end_page = 116
 
     # 原始PDF财报文件存放路径
-    originPDFPath = "C:\\Users\\ThinkPad\\Desktop\\ZTE2019.pdf"
+    originPDFPath = "C:\\Users\\xxxxxx\\ZTE2019.pdf"
 
     # 截取PDF临时文件存放路径
-    parsePDFPath = "C:\\Users\\ThinkPad\\Desktop\\tmp.pdf"
+    parsePDFPath = "C:\\Users\\xxxxxx\\tmp.pdf"
 
     # 解析后excel临时文件存放路径
-    saveExcelPath = "C:\\Users\\ThinkPad\\Desktop\\tmp.xlsx"
+    saveExcelPath = "C:\\Users\\xxxxxx\\tmp.xlsx"
 
     # java的jar包存放路径
-    jarPath = "C:\\Users\\ThinkPad\\Desktop\\ParsePDF.jar"
+    jarPath = "C:\\Users\\xxxxxx\\ParsePDF.jar"
 
     # 提取数据保存成excel存放路径 TODO 注意不要带后缀.xlsx或者.xls，只带文件名即可
     # 提取结果excel命名定义规则：文件名_时间戳.xls格式
-    resultPath = "C:\\Users\\ThinkPad\\Desktop\\sophiaMagic"
+    resultPath = "C:\\Users\\xxxxxx\\sophiaMagic"
 
     # 实现截取PDF有效页数
     split_pdf(start_page, end_page, originPDFPath, parsePDFPath)
