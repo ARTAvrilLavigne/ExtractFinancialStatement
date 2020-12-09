@@ -7,51 +7,51 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * ½âÎöPDFÎÄ¼ş²¢ÌáÈ¡ÓĞĞ§ÊıÖµÉú³ÉexcelÎÄ¼ş¹¤¾ßÀà
- * Ö§³ÖÍ¬Ò»¼Ò¹«Ë¾¶àÄê²Æ±¨µÄÌáÈ¡
+ * è§£æPDFæ–‡ä»¶å¹¶æå–æœ‰æ•ˆæ•°å€¼ç”Ÿæˆexcelæ–‡ä»¶å·¥å…·ç±»
+ * æ”¯æŒåŒä¸€å®¶å…¬å¸å¤šå¹´è´¢æŠ¥çš„æå–
  *
  * @author ART
  * @since 2020-09-13
  */
 public class Main {
-    // ÓÃÀ´´æ·Å±íÖĞÊı¾İ   <"ZTE2019", <"ÓªÒµÊÕÈë",<"now", "50000">>>
+    // ç”¨æ¥å­˜æ”¾è¡¨ä¸­æ•°æ®   <"ZTE2019", <"è¥ä¸šæ”¶å…¥",<"now", "50000">>>
     private static final Map<String, Map<String, Map<String, String>>> resultList = new LinkedHashMap<>();
 
     public static void main(String[] args) {
-        // ³ÌĞòÔËĞĞ´æ·ÅÎÄ¼şµÄÂ·¾¶
-        String basePath = "C:\\Users\\ThinkPad\\Desktop\\";
-        // ²»Í¬Äê·İ²Æ±¨Ô­ÎÄ¼şPDFÎÄ¼şÃû
+        // ç¨‹åºè¿è¡Œå­˜æ”¾æ–‡ä»¶çš„è·¯å¾„
+        String basePath = "C:\\Users\\xxxxx\\";
+        // ä¸åŒå¹´ä»½è´¢æŠ¥åŸæ–‡ä»¶PDFæ–‡ä»¶å
         List<String> pdfList = Arrays.asList("ZTE2019.pdf", "ZTE2018.pdf");
-        // ²»Í¬Äê·İ´ıÇĞ¸îÆğÊ¼Ò³Êı
+        // ä¸åŒå¹´ä»½å¾…åˆ‡å‰²èµ·å§‹é¡µæ•°
         List<Integer> startPageList = Arrays.asList(112, 113);
-        // ²»Í¬Äê·İ´ıÇĞ¸î½áÊøÒ³Êı
+        // ä¸åŒå¹´ä»½å¾…åˆ‡å‰²ç»“æŸé¡µæ•°
         List<Integer> endPageList = Arrays.asList(116, 117);
-        // sheetÒ³µÄ×î´óÁĞÊıÖµ
+        // sheeté¡µçš„æœ€å¤§åˆ—æ•°å€¼
         int maxColnum = 50;
-        // ×îÖÕÌáÈ¡Êı¾İÉú³ÉµÄexcelÃû³Æ
+        // æœ€ç»ˆæå–æ•°æ®ç”Ÿæˆçš„excelåç§°
         String excelName = "ZTEReport";
 
-        // 1¡¢±éÀúÃ¿Ò»Äê²Æ±¨ÌáÈ¡ÊıÖµÉú³Éexcel
+        // 1ã€éå†æ¯ä¸€å¹´è´¢æŠ¥æå–æ•°å€¼ç”Ÿæˆexcel
         for (int i = 0; i < pdfList.size(); i++) {
             String originPdfFileName = pdfList.get(i);
             Integer startPage = startPageList.get(i);
             Integer endPage = endPageList.get(i);
-            // ²Æ±¨µÄÍêÕûÂ·¾¶
+            // è´¢æŠ¥çš„å®Œæ•´è·¯å¾„
             String pdfFilePath = basePath + originPdfFileName;
             File file = new File(pdfFilePath);
-            // ÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
+            // åˆ¤æ–­æ–‡ä»¶æ˜¯å¦å­˜åœ¨
             if (file.exists() && file.isFile()) {
                 PDFUtils.parsePDF(basePath, originPdfFileName, startPage, endPage, maxColnum);
             }
         }
 
-        // 2¡¢½«ÌáÈ¡½á¹ûÉú³ÉexcelÎÄ¼ş
+        // 2ã€å°†æå–ç»“æœç”Ÿæˆexcelæ–‡ä»¶
         String outputExcelName = excelName + "_" + System.currentTimeMillis() + ".xlsx";
         GenerateExcelUtils.buildFinancialReportExcel(basePath, outputExcelName);
     }
 
     /**
-     * ±©Â¶³ö½á¹û¼¯½Ó¿Ú
+     * æš´éœ²å‡ºç»“æœé›†æ¥å£
      *
      * @return resultList
      */
