@@ -1,2 +1,2 @@
-# ExtractFinancialStatement
-提取财务报表PDF中财务数据，解析生成到excel文件
+# Illustration
+鉴于当前没有方便提取财报PDF中的财务数据的工具，于是研究了一下各方面资料写了两种提取的小工具，即java版与python版本~~
