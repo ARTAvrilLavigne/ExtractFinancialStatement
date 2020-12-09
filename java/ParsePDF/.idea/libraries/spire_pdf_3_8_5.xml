@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spire.pdf-3.8.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spire.pdf-3.8.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
