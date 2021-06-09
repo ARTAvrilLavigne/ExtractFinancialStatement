@@ -4,4 +4,4 @@
 **python版**<br>
 
 # Note  
-若需要提取10页以上的PDF，可以自行修改循环使用spire.pdf-3.8.5.jar提供的方法即可(免费API限制使用10页)<br>
+若需要提取10页以上的PDF转为excel，可以自行修改循环使用spire.pdf-3.8.5.jar提供的方法即可(免费API限制使用10页)<br>
