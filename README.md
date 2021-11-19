@@ -11,7 +11,7 @@
 找到一款超级好用，更适合小白的开源PDF提取表格转化excel工具。我写的瞬间挫爆了(允悲~)，刚刚使用一下PDF识别转化excel文件的表格准确率达到100%<br>
 使用条件：需要安装java环境，下载windows的安装包解压后双击tabula.exe即可~<br>
 * ### Windows
-  Download `tabula-win.zip` from [the download site][https://tabula.technology/]. Unzip the whole thing
+  Download `tabula-win.zip` from https://tabula.technology/. Unzip the whole thing
   and open the `tabula.exe` file inside. A browser should automatically open
   to http://127.0.0.1:8080/ . If not, open your web browser of choice and
   visit that link.
