@@ -18,3 +18,33 @@
 
   To close Tabula, just go back to the console window and press "Control-C"
   (as if to copy).
+
+========================================================================<br>
+# 更新2022-03-24  
+对于复杂的表格，使用tabula工具提取表格时也会有部分格式混乱。所以找到一款基于tabula-java工具包装的tabula-py依赖库<br>
+python环境安装依赖库：pip install tabula-py<br>
+通过tabula-py依赖库提供的API进行读取PDF提取表格数据，然后按照自己的要求进行清洗即可，开发环境要求如下：<br>
+- Java 8+
+- Python 3.7+
+
+### Example
+
+tabula-py enables you to extract tables from a PDF into a DataFrame, or a JSON. It can also extract tables from a PDF and save the file as a CSV, a TSV, or a JSON.  
+
+```py
+import tabula
+
+# Read pdf into list of DataFrame
+dfs = tabula.read_pdf("test.pdf", pages='all')
+
+# Read remote pdf into list of DataFrame
+dfs2 = tabula.read_pdf("https://github.com/tabulapdf/tabula-java/raw/master/src/test/resources/technology/tabula/arabic.pdf")
+
+# convert PDF into CSV file
+tabula.convert_into("test.pdf", "output.csv", output_format="csv", pages='all')
+
+# convert all PDFs in a directory
+tabula.convert_into_by_batch("input_directory", output_format='csv', pages='all')
+```
+
+See [example notebook](https://nbviewer.jupyter.org/github/chezou/tabula-py/blob/master/examples/tabula_example.ipynb) for more details. I also recommend to read [the tutorial article](https://aegis4048.github.io/parse-pdf-files-while-retaining-structure-with-tabula-py) written by [@aegis4048](https://github.com/aegis4048).
