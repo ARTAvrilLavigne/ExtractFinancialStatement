@@ -4,12 +4,12 @@
 - [python版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/python/parsePDF)
 
 # Note  
-若需要提取10页以上的PDF转为excel，可以自行修改循环使用spire.pdf-3.8.5.jar提供的方法即可(免费API限制使用10页)<br>
+若需要提取10页以上的PDF转为excel，可以自行修改循环使用`spire.pdf-3.8.5.jar`提供的方法即可(免费API限制使用10页)<br>
 
 ========================================================================<br>
 # 更新2021-11-19  
 找到一款超级好用，更适合小白的开源PDF提取表格转化excel工具。我写的瞬间挫爆了(允悲~)，刚刚使用一下PDF识别转化excel文件的表格准确率达到100%<br>
-使用条件：需要安装java环境，下载windows的安装包解压后双击tabula.exe即可~<br>
+使用条件：需要安装java环境，下载windows的安装包解压后双击`tabula.exe`即可~<br>
 * ### Windows
   Download `tabula-win.zip` from https://tabula.technology/. Unzip the whole thing
   and open the `tabula.exe` file inside. A browser should automatically open
