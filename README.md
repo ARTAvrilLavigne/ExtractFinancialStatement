@@ -21,8 +21,11 @@
 
 ========================================================================<br>
 # 更新2022-03-24  
-对于复杂的表格，使用tabula工具提取表格时也会有部分格式混乱。所以找到一款基于tabula-java工具包装的tabula-py依赖库<br>
-python环境安装依赖库：pip install tabula-py<br>
+对于复杂的表格，使用tabula工具提取表格时也会有部分格式混乱。所以找到一款基于tabula-java工具包装的`tabula-py`依赖库<br>
+- Github地址: https://github.com/chezou/tabula-py
+
+python环境安装依赖库：`pip install tabula-py`<br>
+
 通过tabula-py依赖库提供的API进行读取PDF提取表格数据，然后按照自己的要求进行清洗即可，开发环境要求如下：<br>
 - Java 8+
 - Python 3.7+
