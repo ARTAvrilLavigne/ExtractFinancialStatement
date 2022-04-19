@@ -13,7 +13,7 @@
 找到一款超级好用，更适合小白的开源PDF提取表格转化excel工具。刚刚使用一下PDF识别转化excel文件的表格准确率达到100%<br>
 使用条件：首先需要安装Java环境，然后下载windows的`tabula-win.zip`安装包解压后双击`tabula.exe`即可~<br>
 备注：安装java环境可以自行百度，操作教程太多了。实在不会，我附上一个参考教程链接吧：[win10安装java8](https://blog.csdn.net/JunLeon/article/details/122623465)<br>
-* ### Windows
+* ### [Windows](https://aegis4048.github.io/parse-pdf-files-while-retaining-structure-with-tabula-py)  
   1. Windows & Linux users will need a copy of Java installed. You can download [Java](https://www.java.com/zh-CN/download/) here. (Java is included in the Mac version.)
   
   2. Download `tabula-win.zip` from https://tabula.technology/. Unzip the whole thing
