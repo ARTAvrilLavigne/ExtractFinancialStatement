@@ -1,5 +1,5 @@
 # Illustration
-`方法一：`<br>
+`方法一：(需要会写python或java)`<br>
 鉴于当前没有方便提取财报PDF中的财务数据的工具，于是研究了一下各方面资料写了两种语言提取的小工具，即：<br>
 - [java版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/java/ParsePDF)
 - [python版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/python/parsePDF)
@@ -9,7 +9,7 @@
 
 ========================================================================<br>
 # 更新2021-11-19  
-`方法二：(个人推荐)`<br>
+`方法二：(个人推荐，不需要写代码)`<br>
 找到一款超级好用，更适合小白的开源PDF提取表格转化excel工具。刚刚使用一下PDF识别转化excel文件的表格准确率达到100%<br>
 使用条件：首先需要安装Java环境，然后下载windows的`tabula-win.zip`安装包解压后双击`tabula.exe`即可~<br>
 备注：安装java环境可以自行百度，操作教程太多了。实在不会，我附上一个参考教程链接吧：[win10安装java8](https://blog.csdn.net/JunLeon/article/details/122623465)<br>
@@ -26,7 +26,7 @@
 
 ========================================================================<br>
 # 更新2022-03-24  
-`方法三：`<br>
+`方法三：(需要会写python)`<br>
 对于复杂的表格，使用tabula工具提取表格时也会有部分格式混乱。所以找到一款基于tabula-java工具包装的`tabula-py`依赖库<br>
 - Github地址: https://github.com/chezou/tabula-py
 
