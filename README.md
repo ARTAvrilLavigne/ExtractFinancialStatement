@@ -4,7 +4,7 @@
 - [java版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/java/ParsePDF)
 - [python版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/python/parsePDF)
 
-备注：若需要提取10页以上的PDF转为excel，可以自行修改循环使用`spire.pdf-3.8.5.jar`提供的方法即可(免费API限制使用10页)<br>
+备注：若需要提取10页以上的PDF转为excel，可以自行修改代码for循环使用`spire.pdf-3.8.5.jar`提供的方法即可(免费API限制使用10页)<br>
 
 ========================================================================<br>
 # 更新2021-11-19  
