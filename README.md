@@ -1,5 +1,5 @@
 # 使用说明
-# `方法一：(需要会写python或java)`<br>
+# `方法一：(需要会python或java)`<br>
 鉴于当前没有方便提取财报PDF中的财务数据的工具，于是研究了一下各方面资料写了两种语言提取的小工具，即：<br>
 - [java版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/java/ParsePDF)
 - [python版](https://github.com/ARTAvrilLavigne/ExtractFinancialStatement/tree/main/python/parsePDF)
@@ -25,7 +25,7 @@
 
 ========================================================================<br>
 # 更新2022-03-24  
-# `方法三：(需要会写python)`<br>
+# `方法三：(需要会python)`<br>
 对于复杂的表格，使用tabula工具提取表格时也会有部分格式混乱。所以找到一款基于tabula-java工具包装的`tabula-py`依赖库<br>
 - Github地址: https://github.com/chezou/tabula-py
 
